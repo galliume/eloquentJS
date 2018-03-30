@@ -1,0 +1,19 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+	<script src="code/jacques_journal.js"></script>
+	<script src="code/chapter/04_data.js"></script>
+</head>
+<body>
+	<script>
+		for (var event in correlations) {
+		  var correlation = correlations[event];
+		  if (correlation > 0.1 || correlation < -0.1)
+		    console.log(event + ": " + correlation);
+		}
+		// â†’ brushed teeth: -0.3805211953
+		// â†’ work:          -0.1371988681
+		// â†’ reading:        0.1106828054
+	</script>
+</body>
+</html>
